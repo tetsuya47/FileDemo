@@ -1,0 +1,208 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    margin: 24px;
+}
+
+.box{
+    background-color:rgb(231, 229, 229);
+    color:#1e1e2e;
+    margin-bottom:14px;
+}
+
+.border-shorthand{
+    /* border: width/style/color */
+    border: 4px solid #1e1e2e;
+    padding: 10px;
+}
+
+.border-per-side{
+    border-top: 4px solid #1e1e2e;
+    border-right:4px dashed rgb(64, 64, 189);
+    border-bottom: 4px dotted rgb(141, 141, 55);
+    border-left: 4px double rgb(218, 69, 69);
+}
+
+.grid-4, .gird-6{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:18px;
+}
+
+.radius-demo, .bgsize-demo{
+    background-color:#ededed;
+    padding: 10px;
+    width: 140px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid rgb(213, 35, 35);
+}
+
+.radius-1{
+    border-radius: 8px;
+}
+
+.radius-2{
+    border-radius: 30px 5px;
+    /*  30px: Góc trên trái và dưới phải */
+    /* 5px: Ngược lại của cái trên */
+}
+
+.radius-3{
+    border-radius:5px 15px 25px 30px;
+}
+
+.radius-circle{
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    /* Kích hoạt chế độ flex-box */
+    display:flex;
+    /* Căn chỉnh theo chiều ngang */
+    justify-content:center;
+    /* Căn giữa theo chiều dọc */
+    align-items:center;
+}
+
+.outline-demo{
+    border: 2px solid rgb(15, 6, 6);
+    outline: 3px dashed red;
+    outline-offset:5px;
+    padding: 14px;
+    margin: 12px;
+}
+
+.sizing-content{
+    box-sizing: content-box;
+    border: 4px solid rgb(172, 13, 13);
+    width: 200px;
+    padding: 15px;
+    /* Chỉ tính padding và border không tính vào 
+    chiều rộng và chiều cao của phần tử */
+}
+.sizing-border{
+    border: 3px solid rgb(79, 89, 25);
+    width: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    /* Tính cả padding và border vào chiều rộng 
+    và chiều cao của phần tử */
+}
+
+.bg-img-basic{
+    background-image: url(tile.png);
+    color:white;
+    /* Tạo bóng cho chữ */
+    text-shadow:1px 1px 2px black;
+}
+
+.bg-demo{
+    background-image: url(tile.png);
+    height: 100px;
+    border: 2px solid brown;
+    margin-bottom: 24px;
+}
+
+.bg-repeat{
+    background-repeat: repeat;
+    /* Lặp lại 2 chiều ngang và dọc
+    không có khoảng cách */
+}
+
+.bg-no-repeat{
+    background-repeat: no-repeat;
+}
+
+.bg-repeat-x{
+    background-repeat: repeat-x;
+}
+
+.bg-repeat-y{
+    background-repeat: repeat-y;
+}
+
+.bg-space{
+    background-repeat: space;
+}
+
+.bg-round{
+    background-repeat: round;
+}
+
+.bg-pos-topleft{
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.bg-pos-topcenter{
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.bg-pos-topright{
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.bg-pos-bottomright{
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.bg-pos-px{
+    background-image: url(tile.png);
+    background-repeat: no-repeat;
+    background-position: 20px 40px;
+    /* cánh trái cánh trên */
+    height: 100px;
+}
+
+.bgsize-demo{
+    background-image: url(landscape.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+}
+
+.size-auto{
+    background-size: auto;
+
+}
+
+.size-cover{
+    background-size: cover;
+}
+
+.size-contain{
+    background-size: contain;
+}
+
+.size-custom{
+    width: 200px;
+    height: 100px;
+}
+
+.bg-attach-scroll{
+    background-image: url(tile.png);
+    background-attachment: scroll;
+    padding: 20px;
+}
+
+.bg-attach-fixed{
+    background-image: url(tile.png);
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.multipel-bg{
+    background-image: url(tile.png), url(landscape.jpg);
+    background-repeat: no-repeat, no-repeat;;
+    background-position: 12px 12px, center;
+    padding:20px;
+    background-size: 40px 40px, cover;
+    height:140px;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(30, 29, 29);
+}

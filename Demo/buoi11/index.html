@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>2.3: Border - width/color riêng</h3>
+    <div class="box border-shorthand">
+        border-shorthand
+    </div>
+    <div class="box border-per-side">
+        Mỗi cạnh 1 màu khác nhau.
+    </div>
+
+    <h3>2.4: border-radius (bo góc)</h3>
+    <div class="grid-4">
+        <div class="radius-demo radius-1">
+            đều 4 góc
+        </div>
+        <div class="radius-demo radius-2">
+            Bo góc chéo nhau
+        </div>
+        <div class="radius-demo radius-3">
+            4 góc khác nhau
+        </div>
+        <div class="radius-demo radius-circle">
+            hình tròn: 50%
+        </div>
+    </div>
+    <h3>2.5: Outline - outline offset (Khoảng cách ra ngoài của border)</h3>
+    <div class="box outline-demo">
+        outline
+    </div>
+
+    <h3>1.7: Box-sizing - content-box(Mặc định) với border-box</h3>
+    <div class="box box-sizing-content">
+        box-sizing-content
+    </div>
+    <div class="box sizing-border">
+        Tổng kích thước: Width + padding + border => bằng 200px
+    </div>
+
+    <h2>2.6: background image</h2>
+    <h3>2.6.1: Background Image cơ bản</h3>
+    <div class="box bg-img-basic">
+        Background Image: url(link)
+    </div>
+    <h3>2.7: background-repeat: lặp BG</h3>
+    <div class="grid-6">
+        <div class="bg-demo bg-repeat">
+            repeat (mặc định)
+        </div>
+        <div class="bg-demo bg-no-repeat">
+            no-repeat
+        </div>
+        <div class="bg-demo bg-repeat-x">
+            repeat-x
+        </div>
+        <div class="bg-demo bg-repeat-y">
+            repeat-y
+        </div>
+        <div class="bg-demo bg-space">
+            space (lặp lại nhưng chừa khoảng cách đều nhau giữa các ảnh)
+        </div>
+        <div class="bg-demo bg-round">
+            round (lặp lại nhưng tự co giãn để vừa khít số lần lặp,
+            không để dư khoảng trắng)
+        </div>
+    </div>
+    <h3>2.8: background-position: Vị trí của ảnh</h3>
+    <p>
+        position; định vị bằng từ khóa (top, bottom, center, left, right
+        hoặc kết hợp 2 từ trong những từ này lại với nhau hoặc tiếp bằng
+        các giá trị cụ thể (px, em ,rem, %,...))
+    </p>
+    <div class="grid-6">
+        <div class="bg-demo bg-pos-topleft">
+            top left
+        </div>
+        <div class="bg-demo bg-pos-topcenter">
+            top center
+        </div>
+        <div class="bg-demo bg-pos-topright">
+            top center
+        </div>
+        <div class="bg-demo bg-pos-bottomright">
+            bottom right
+        </div>
+        <!--  -->
+        <div class=" box bg-pos-px">
+            Định vị lệch theo px cụ thể
+        </div>
+    </div>
+
+    <h3>2.9: Background-size: auto,cover, contain, giá trị cụ thể</h3>
+    <div class="gird-4">
+        <div class="bgsize-demo size-auto">
+            Giữ nguyên kích thước gốc của ảnh 
+        </div>
+        <div class="bgsize-demo size-cover">
+            Cover là phủ kín khung không bị cắt ảnh
+        </div>
+        <div class="bgsize-demo size-contain"> 
+            Contain này sẽ thấy được trọn ảnh.
+        </div>
+        <div class="bgsize-demo size-custom"> 
+            Custom là tùy chỉnh
+        </div>
+    </div>
+    <h3>2.10: Background-attachment - scroll, fixed, local</h3>
+    <div class="box bg-attach-scroll">
+        Scoll(mặc định): ảnh cuộn thao nội dung trang.
+    </div>
+    <div class="box bg-attach-fixed">
+        fixed: ảnh đứng yên khi cuộn trang
+    </div>
+    <h3>2.11: Nhiều Background chồng lên nhau (multiple background)</h3>
+    <div class="box multipel-bg">
+        2 lớp ảnh nền chồng lên nhau. cách nhau bới dấu phẩy trong 1 khai báo background-image.
+    </div>
+</body>
+</html>

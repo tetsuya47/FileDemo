@@ -1,0 +1,45 @@
+body{
+    background-color: #f5f0e8;
+    padding: 20px;
+    color: #333;
+}
+
+h1{
+    color:aliceblue;
+    background-color:rgba(139, 69, 69, 0.792);
+    padding: 15px;
+}
+
+h2{
+    color:burlywood;
+    background:rgba(142, 62, 62, 0.812);
+    padding: 20px
+}
+
+p{
+    font-size: 20px;
+}
+
+ul{
+    color:black;
+    background-color:bisque;
+    padding: 15px
+}
+
+caption{
+    color:aliceblue;
+    background-color:brown;
+    padding: 15px
+}
+
+thead{
+    color:black;
+    background-color:bisque;
+    padding: 15px
+}
+
+button{
+    color:white;
+    background-color:brown;
+    padding: 15px;
+}

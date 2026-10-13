@@ -1,0 +1,36 @@
+.menu-row{
+    background: rgb(10, 10, 165);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    height: 60px;
+}
+
+.logo{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu{
+    display:flex;
+    list-style: none;
+}
+
+.menu li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
+    font-size: 16px;
+    transition: background 0.3s transform .3s;
+}
+
+.menu li a:hover{
+    background:rgb(230, 230, 116);
+    color:#fff;
+    border: 1px solid yellowgreen;
+    transform: translateY(-2px)
+}
+

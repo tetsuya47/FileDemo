@@ -1,0 +1,165 @@
+h1{
+    color:rgb(96, 48, 13);
+}
+
+.font-serif{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-sans{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.font-mono{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.font-modern{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fs-small{
+    font-size: 0.875rem;
+}
+
+.fs-normal{
+    font-size:1.125rem;
+}
+
+.fs-large{
+    font-size:1.75rem;
+}
+
+.fw-bold{
+    font-weight:bold;
+}
+
+.fst-italic{
+    font-style:italic;
+}
+
+.lh-tight{
+    line-height:1.5;
+}
+
+.lh-loose{
+    line-height:2;
+}
+
+.ta-left{
+    text-align:left;
+}
+
+.ta-center{
+    text-align:center;
+}
+
+.ta-right{
+    text-align:right;
+}
+
+.td-underline{
+    text-decoration:underline;
+}
+
+.td-line-through{
+    text-decoration:line-through;
+}
+
+.tt-uppercase{
+    text-transform:uppercase;
+}
+
+.tt-capitalize{
+    text-transform:capitalize;
+}
+
+.ls-wide{
+    letter-spacing: 5px;
+}
+
+.wrapper-margin{
+    background-color:#cdcdcd;
+    padding: 10px;
+}
+
+.box{
+   background-color:#ffffff;
+   margin-bottom:14px; 
+}
+
+.margin-auto{
+    width:250px;
+    margin:0 auto;
+    /* trên dưới là 0, trái phải là auto */
+}
+
+.margin-negative{
+    margin-top: -15px;
+}
+
+.grid-9{
+    display: flex;
+    /* Các phần tử con bên trong sẽ mặc định xếp hàng theo hàng ngang 
+    trên cùng 1 hàng */
+    gap: 10px;
+    /* Tạo khoảng cách đêù 10px giữa các phần tử con bên trong 
+    áp dụng cho cả hàng và cột*/
+    flex-wrap:wrap;
+    /* Cho phép phần tử con tự động xuống dòng khi không gian chiều
+    ngang */
+}
+
+.border-demo{
+    background-color:blanchedalmond;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    width: 140px;
+    box-sizing: border-box;
+}
+
+.bs-none{
+    border: 4px none #333;
+    /* không có viền suy ra có kích thước hay màu thig cũng vô hình */
+}
+
+.bs-solid{
+    border: 4px solid #333;
+    /* viền có Nét liền đơn */
+}
+
+.bs-dashed{
+    border: 4px dashed #333;
+    /* Nét đứt */
+}
+
+.bs-dotted{
+    border: 4px dotted #333;
+    /* Chấm tròn nhỏ */
+}
+
+.bs-double{
+    border: 4px double #333;
+    /* 2 viền song song */
+}
+
+.bs-groove{
+    border: 4px groove #333;
+    /* Đường viền có rãnh */
+}
+
+.bs-ridge{
+    border: 4px ridge #333;
+    /* viền có gờ */
+}
+
+.bs-inset{
+    border: 4px inset #333;
+    /* viền lõm*/
+}
+
+.bs-outset{
+    border: 4px outset #333;
+    /* viền lồi */
+}

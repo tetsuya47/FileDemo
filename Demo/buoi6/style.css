@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    padding: 0;
+}
+
+body{
+    font-family:montserrat;
+    margin: 24px;
+    line-height: 1.5;
+    color: #722104;
+}
+
+h1{
+    color:#ff6b35
+}
+
+.demo-inherit{
+    color: darkblue;
+    font-family: Georgia, serif;
+    background-color: #f0f4ff; 
+    /* background-color: Sẽ không được kế thừa */
+    padding: 12px;
+}
+
+h2{
+    color:#c53906;
+    border-bottom: 1.5px solid #c53906;
+    padding-bottom: 2px;
+    margin-top: 40px;
+}
+
+.note{
+    font-style: italic;
+    color: #9598a0e9;
+}
+
+p{
+    margin: 12px 0;
+}
+
+.demo-universal * {
+    border: 1px dashed #722104;
+    padding: 8px;
+    margin: 8px;
+}
+
+/*descentdant selector -> SELECTOR con cháu */
+/* cú pháp: selector-cha selector-con -> cách nhau bởi dấu cách*/
+/* demo-descentdant chọn mọi p nằm bên trong phần tử có class là demo-descentdant */
+.demo-descentdant p{
+    color: purple;
+    font-weight:bold;
+}
+
+/* 
+- name: theo tên màu tiếng anh
+- hex (#fffff): phổ biến mã màu
+- rgb(r,g,b): Mỗi giá trị từ 0-255
+- rgba(r,g,b,a): a là alpha = độ trong suốt
+giá trị từ 0 là trong suốt hoàn toàn đến 1 lad đục hoàn toàn
+- hsl(h,s%,l%): HUE (vòng màu 0 đên 360 đọ), saturation(độ bão hòa)
+- lightness (Độ sáng)
+*/
+
+.color{
+    width: 150px;
+    height: 150px;
+    margin: 6px;
+    padding: 8px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.color-name{
+    background-color: tomato;
+}
+
+.color-hex{
+    background-color: #5fc511;
+}
+
+.color-rgb{
+    background-color: rgb(33, 150, 233)
+}
+
+.color-rgba{
+    background-color: rgba(33, 150, 245,0,5)
+}
+
+.color-hsl{
+    background-color:hsl(255, 80%, 35%)
+}

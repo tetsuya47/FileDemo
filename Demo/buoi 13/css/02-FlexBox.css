@@ -1,0 +1,109 @@
+.demo{
+    background: #f1f5f9;
+    border: 2px dashed rgb(120, 53, 228);
+    padding: 8px 8px;
+}
+
+.box{
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.b1{
+    background: red;
+}
+
+.b2{
+    background: green;
+}
+
+.b3{
+    background: rgb(122, 122, 5);
+}
+
+.flex-basic{
+    display: flex;
+}
+
+.dir-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.dir-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.dir-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.dir-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.jc-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.jc-center{
+    display: flex;
+    justify-content: center;
+}
+
+.jc-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jc-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jc-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.jc-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.demo.tall{
+    height: 200px;
+}
+
+.ai-stretch{
+    display: flex;
+    align-items: stretch;
+}
+
+.ai-stretch .box{
+    height: auto;
+}
+
+.ai-flex-start{
+    display: flex;
+    align-items: flex-start;
+}
+
+.ai-flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+
+.ai-center{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,65 @@
+.d-block{
+    display: block;
+    background: #f3ce96;
+}
+
+.d-demo>*{
+    border: 1px dashed #df8600;
+    padding: 4px;
+    margin: 4 px 0;
+}
+
+.d-inline{
+    display:inline;
+    background:#b4dc5d;
+    /* width và height sẽ không được nhận khi dùng inline */
+}
+
+.d-inline-block{
+    display: inline-block;
+    background:#638220;
+    width: 200px;
+    height: 50px;
+}
+
+.d-none{
+    display: none;
+}
+
+.card{
+    position: relative;
+    /* làm mốc cho phần tử absolute bên trong */
+    width: 260px;
+    height: 140px;
+    border: 1px solid rgb(78, 168, 224);
+    padding: 12px;
+}
+
+.badge{
+    position: absolute;
+    /* Đặt theo card */
+    top: 0;
+    right: 0;
+    background:rgb(228, 64, 64);
+    color:#fff;
+    padding: 4px 10px;
+    font-size: 14px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.btn{
+    background: rgb(63, 140, 188);
+    color:#fff;
+    border: 0;
+    padding: 12px 24px;
+    cursor: pointer;
+    /* Đổi màu mượt trong vòng 0.3s */
+    transition: background .3s transform .3s;
+}
+
+.btn:hover{
+    background:#fff;
+    color: #068a86;
+    border: 1.5px solid #068a86;
+    transform: translateY(-2px);
+}

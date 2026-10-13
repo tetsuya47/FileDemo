@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buoi 10 - Font và Box model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Buoi 10 - Font và Box model</h1>
+
+    <h2 class="tt-uppercase">1. Typography - Định dạng chữ</h2>
+
+    <h3>1.1: font-family - Họ chữ</h3>
+    <p>
+        Khai báo theo thứ tự yêu tiên, và cách nhau bởi dấu phẩy
+        Khi máy user không hỗ trợ font đầu thì trình duyệt sẽ 
+        tự chuyển sang font sau. Và luôn kết thúc bằng cái "họ chung"
+    </p>
+    
+    <p class="font-serif">
+        Font-family: Georgia, 'Times New Roman', Times, serif
+    </p>
+    <p class="font-sans">
+        Font-family: Arial, Helvetica, sans-serif
+    </p>
+    <p class="font-mono">
+        Font-family: 'Courier New', Courier, monospace
+    </p>
+    <p class="font-modern">
+        Font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        (Tự đổi theo font mặc định của hệ điều hành)
+    </p>
+
+    <h3>1.2: Font-size, font-weight, font-style</h3>
+    <p class="fs-small">
+        font-size: 0.875rem (Nhỏ khoảng 14px)
+    </p>
+    <p class="fs-normal">
+        font-size:1.125rem (Cỡ vừa khoảng 18px)
+    </p>
+    <p class="fs-large">
+        font-size:1.75rem (Cỡ lớn khoảng 28px)
+    </p>
+    <p class="fw-bold">
+        font-weight: bold (độ đậm)
+    </p>
+    <p class="fst-italic">
+        font-style: italic (In nghiêng)
+    </p>
+
+    <h3>1.3: Line-height: Khoảng cách giữa các dòng</h3>
+    <p class="lh-tight">
+        Line-height: 1.1 (Chật) - Đây là 1 đoạn văn dài để thấy rõ các dòng sát nhau như nào
+        khi line height nhỏ, độc sẽ khó chịu
+    </p>
+    <p class="lh-loose">
+        Line-height: 2 (thoáng) - Đây là 1 đoạn văn dài để thấy rõ các dòng sát nhau như nào
+        khi line height nhỏ, độc sẽ khó chịu
+    </p>
+
+    <h3>1.4: căn lề (Text-align)</h3>
+    <p class="ta-left">text-align:left</p>
+    <p class="ta-center">text-align:center</p>
+    <p class="ta-right">text-align:right</p>
+
+    <h3>1.5: text-decoration & text-transform</h3>
+    <p class="td-underline">
+        text-decoration: underline;
+    </p>
+    <p class="td-line-through">
+        text-decoration: line-through
+    </p>
+    <p class="tt-uppercase">
+        text-transform: uppercase
+    </p>
+    <p class="tt-capitalize">
+        text-transform: capitalize
+    </p>
+
+    <h3>1.6: letter-spacing - Khoảng cách giữa các ký tự</h3>
+    <p class="ls-wide">
+        letter-spacing: 5px (Khoảng cách giữa các ký tự)
+    </p>
+<!--  -->
+    <h2 class="tt-uppercase">2. CSS - Box Model</h2>
+
+    <h3>2.1: Margin - cú pháp giốn padding, thêm auto và giá trị âm</h3>
+    <div class="wrapper-margin">
+        <div class="box margin-auto">
+            margin: 0 auto (canh giữa theo chiều ngang)
+        </div>
+    </div>
+    <div class="box margin-negative">
+        margin-top: -15px; (kéo phần tử đè lên phần tử bên trên)
+    </div>
+
+    <h3>2.2: Border-Style (Kiểu viền)</h3>
+    <div class="grid-9">
+        <div class="border-demo bs-none">none</div>
+        <div class="border-demo bs-solid">solid</div>
+        <div class="border-demo bs-dashed">dashed</div>
+        <div class="border-demo bs-dotted">dotted</div>
+        <div class="border-demo bs-double">double</div>
+        <div class="border-demo bs-groove">groove</div>
+        <div class="border-demo bs-ridge">ridge</div>
+        <div class="border-demo bs-inset">inset</div>
+        <div class="border-demo bs-outset">outset</div>
+    </div>
+</body>
+</html>

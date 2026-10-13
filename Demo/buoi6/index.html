@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buổi 6: CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Buổi 6: CSS Selector nâng cao và CSS color</h1>
+    <p style="font-style: italic">Giải thích lý thuyết</p>
+    <h2>1. Tính kế thừa</h2>
+    <p>
+      Một số thuộc tính css đặc biệt(Thuộc tính về chữ như là Font-Family,
+      Font-size, color,....)khi được đặt cho một phần tư cha sẽ tự động "Truyền"
+      xuống cho phần tử con bên trong, dù cho con không có luật CSS riêng
+    </p>
+    <div class="demo-inherit">
+      <p>Đoạn văn này nằm trực tiếp trong khối demo-inherit.</p>
+      <p>
+        Đoạn văn này cũng vậy và bên trong còn có
+        <span>Một đoạn chữ nằm trong thẻ span</span>
+        -Chữ trong span vẫn được kế thừa màu và font từ DIV CHA
+      </p>
+    </div>
+    <p class="note">
+      Lưu ý: Không phải thuộc tính nào cũng được kế thừa <br />Ví dụ: border,
+      padding, background-color...sẽ không tự động truyền xuống con, chỉ những
+      thuộc tính liên quan đến văn bản sẽ được kế thừa.
+    </p>
+    <h2>
+      2. Chọn tất cả các phần tử bằng cái dấu '*'' (Cái này gọi là UNIVERSAL
+      SELECTOR: *)
+    </h2>
+    <p>
+      Dấu * chọn toàn bộ phần tử trên trang. Không cần biết tên thẻ, class hay
+      id là gì vì ảnh hưởng rất rộng nên chỉ được dùng trong những trường hợp
+      đặc biệt (VD: Reset toàn bộ trang về mặc định)
+    </p>
+    <div class="demo-universal">
+      <p>Đoạn văn này có biền vì nằm trong class="demo-universal"</p>
+      <div>
+        <span>Chữ trong span cũng có viền dù span nằm sâu bên trong 2 lớp</span>
+      </div>
+    </div>
+    <p>Đoạn văn này nằm ngoài demo-universal nên không có viền</p>
+    <h2>3. Kết hợp selector con-cháu</h2>
+    <p>
+      Viết 2 selector cách nhau bởi 1 khoảng trắng <br />nghĩa là chọn mọi thẻ
+      &lt;p&gt; nằm trong phần tử có trong class demo-descentdant, ở BẤT KÌ CẤP
+      ĐỘ lồng nào (con,cháu,chắt,...)
+    </p>
+    <div class="demo-descentdant">
+      <p>Đoạn văn trực tiếp - nằm trong demo-descentdant</p>
+      <div>
+        <p>
+          Đoạn văn cháy - nằm trong 1 div khác, nhưng div đó lại nằm trong class
+          demo-descentdant, nên vẫn được tính là con cháu
+        </p>
+      </div>
+    </div>
+    <p>Đoạn văn nằm ngoài demo-descentdant thì không bị ảnh hưởng</p>
+
+    <h2>4. Màu sắc nâng cao</h2>
+    <div class="color-box color-name">
+      Name color<br />
+      Tomato
+    </div>
+    <div class="color-box color-hex">
+     <br />
+      Hex
+      <code>#5fc511</code>
+    </div>
+    <div class="color-box color-rgb">
+      <br />
+      RGB
+      <code>rgb(33, 150, 233)</code>
+    </div>
+    <div class="color-box color-rgba">
+      <br />
+      RGBA
+      <code>rgba(33, 150, 245,0,5)</code>
+    </div>
+    <div class="color-box color-hsl">
+      <br />
+      HSL
+      <code>hsl(255, 80%, 35%)</code>
+    </div>
+  </body>
+</html>

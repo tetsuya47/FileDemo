@@ -1,0 +1,101 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    margin: 24px;
+}
+
+.demo-child{
+    background-color:#f7F7f9;
+    padding: 14px;
+}
+
+.demo-child > p{
+    color:blueviolet;
+    font-weight: bold;
+}
+/* Nếu đổi thành  .demo-child p nghia là bỏ >, cả 3 đoạn cùng được định dạng (kể cả trong div còn)*/
+
+.demo-hover{
+    background-color:gray;
+    padding: 14px;
+    text-align:center;
+    font-weight: 900px;
+}
+
+.demo-hover:hover{
+    background-color:#0d0db8;
+    color:#fff;
+    cursor: pointer;
+    /* thay đổi hiệu ứng con chỏ chuột */
+}
+
+/* 4 Trạng thái của link:
+        1. :link - link chưa được ghe thăm
+        2. :visited - link đã được ghé thăm
+        3. :hover - link đang được rê chuột
+        4. : active - link đang được bấm (giữ chuột chưa thả tay) */
+
+.demo-link:link{
+    color:orange;
+    text-decoration: none;
+}
+
+.demo-link:visited{
+    color: #030365;
+}
+
+.demo-link:hover{
+    color: #1093de;
+    text-decoration:underline;
+}
+
+.demo-link:active{
+    color: #ee46ca;
+}
+
+:root{
+    --mau-chinh:orange;
+    --mau-phu: #0d0db8;
+    --khoang-dem: 14px;
+}
+
+.demo-root-box1{
+    background-color:var(--mau-chinh);
+    color:#ffffff;
+    padding:var(--khoang-dem);
+    margin-bottom: 8px;
+}
+
+.demo-root-box2{
+    background-color:var(--mau-chinh);
+    color:#ffffff;
+    padding:var(--khoang-dem);
+    margin-bottom: 8px;
+}
+
+.demo-nav ul{
+    /* Bỏ dấu chấm đen mặc định của ul */
+    list-style: none;
+    display: flex;
+    background-color:var(--mau-phu);
+    margin: 0;
+    padding-top: var(--khoang-dem);
+    padding-bottom: var(--khoang-dem);
+}
+
+.demo-nav li{
+    /* Chia đều không gian cho mỗi mục*/
+    flex: 1
+}
+
+.demo-nav a{
+    /* để toàn ô đều có thể bấm không chỉ riêng chữ */
+    display: block;
+    text-align: center;
+    color:#fff;
+    text-decoration: none;
+}
+
+.demo-nav a:hover{
+    background-color: chocolate;
+}

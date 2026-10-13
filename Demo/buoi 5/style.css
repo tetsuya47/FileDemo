@@ -1,0 +1,40 @@
+/* Selecto: Là tên thẻ (h1, h2, a,.....*/
+h1 {
+  /* Thộc tính màu chữ */
+  color: orange;
+}
+h2 {
+  color: rgb(29, 39, 218);
+}
+
+#header-info {
+  color: #0000;
+  background-color: rgb(255, 229, 196);
+  padding: 20px;
+  margin: 20px;
+}
+
+#highlight {
+  color: orange;
+  font-weight: bold;
+}
+
+.section-block {
+  background-color: rgb(171, 202, 231);
+}
+
+body {
+  padding: 40px;
+}
+
+h3 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+video {
+  padding: 10px 20px 15px 5px;
+  /* đủ 4 hướng: trên, phải, dưới, trái*/
+}

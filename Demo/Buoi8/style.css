@@ -1,0 +1,83 @@
+h1{
+    color:rgb(162, 2, 2);
+}
+
+h2{
+    color:rgb(15, 15, 153);
+    border-bottom: 2px solid grey;
+    padding-bottom: 8px;
+    margin-top: 40px;
+}
+
+h3{
+    color:rgb(248, 11, 11);
+}
+
+    /* 200px luôn là 200px, khối này sẽ chết đúng kích thước ở mọi hoàn cảnh */
+.box{
+    background-color:bisque;
+    color:blueviolet;
+    padding: 10px;
+    box-sizing: border-box;
+    /* là thuốc tính giữ cho kích thước khoogn bị phình to khi thêm padding hoặc thêm border */
+}
+
+.box-px{
+    width: 200px;
+}
+
+.wrapper-percent{
+    width: 400px;
+    border: 1px dashed #999;
+    padding: 8px;
+}
+
+.box-percent{
+    width: 50%;
+}
+
+/* em */
+.box-em-outter{
+    font-size: 20px;
+    border: 1px dashed #999;
+    padding: 6px;
+    margin-top: 8px;
+}
+
+.box-em-inter{
+    font-size: 2em;
+    background-color:#4dee3b
+}
+
+.box-rem-outter{
+    font-size: 20px;
+    border: 1px dashed #a55f5f;
+    padding: 6px;
+}
+
+.box-rem-inter{
+    font-size: 2rem;
+    background-color:#3bb5ee;
+    padding: 6px;
+    margin-top: 8px;
+}
+
+.box-vw{
+    width: 40vw;
+}
+
+.box-vh{
+    margin-top:20px;
+    height: 4vh;
+}
+
+.box-dvh{
+    height: 10dvh;
+    /* Callback nếu trình duyêt không hiểu dvh */
+    height: 80px; 
+    width: 40vw;
+}
+
+.fs-clamp{
+    font-size: clamp(1rem, 1rem + 2vw, 2.5rem);
+}

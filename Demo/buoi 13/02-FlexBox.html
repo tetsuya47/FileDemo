@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/02-FlexBox.css">
+</head>
+
+<body>
+    <a class="back" href="index.html">&larr;Mục lục</a>
+    <h1>Demo Flex-box</h1>
+    <h2>1. Display: Flex</h2>
+    <h3><code>Display: flex;</code></h3>
+    <p class="note">
+        Tất cả thẻ con bên trong sẽ tự động xếp thành 1 hàng ngang
+        (từ trái sang phải thanh vì xếp theo kiểu block thông thường)
+        Tự động co giãn kích thước vừa vặn với nội dung bên trong.
+    </p>
+
+    <div class="demo flex-basic">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+
+    <h2>2. Flex direction</h2>
+    <p class="note">Thay đổi hướng sắp xếp (ngang/dọc/xuôi/ngược)</p>
+
+    <h3><code>Flex direction: row;</code></h3>
+    <p class="note">Mặc định: xếp ngang từ trái sang phải</p>
+    <div class="demo dir-row">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+
+    <h3><code>Flex direction: column;</code></h3>
+    <p class="note">Các vật phẩm được sắp xếp từ trên xuống dưới.</p>
+    <div class="demo dir-column">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+
+    <h3><code>Flex direction: row-reverse;</code></h3>
+    <p class="note">Các mục được đặt ngược chiều với hướng văn bản.</p>
+    <div class="demo dir-row-reverse">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+
+    <h3><code>Flex direction: column-reverse;</code></h3>
+    <p class="note">Các mục được đặt ngược chiều với hướng văn bản.</p>
+    <div class="demo dir-column-reverse">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+
+    <h2>3. justify-content</h2>
+    <h3><code>justify-content: flex-start</code></h3>
+    <p class="note">Các mục được sắp xếp thẳng hàng về phía bên trái của vùng chứa.</p>
+    <div class="demo jc-start">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+    <h3><code>justify-content: flex-center</code></h3>
+    <p class="note">Các vật phẩm được sắp xếp thẳng hàng ở giữa thùng chứa</p>
+    <div class="demo jc-center">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+    <h3><code>justify-content: flex-end</code></h3>
+    <p class="note">Các mục được sắp xếp thẳng hàng về phía bên phải của vùng chứa.</p>
+    <div class="demo jc-end">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+    <h3><code>justify-content: space-between</code></h3>
+    <p class="note">Các mục được hiển thị với khoảng cách đều nhau.</p>
+    <div class="demo jc-space-between">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+    <h3><code>justify-content: space-around</code></h3>
+    <p class="note">Các mục được hiển thị với khoảng cách đều nhau xung quanh chúng.</p>
+    <div class="demo jc-space-around">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+    <h3><code>justify-content: space-evenly</code></h3>
+    <p class="note">Tất cả đều bằng nhau tuyệt đối</p>
+    <div class="demo jc-space-evenly">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+
+    <h2>4. align-items ( Trục phụ)</h2>
+    <h3><code>align-items: stretch</code></h3>
+    <p class="note">
+        Kéo giãn các phần tử con cho đầy chiều cao của khung chứa phần tử cha
+        miễn là các phần tử con đó không bị cố định chiều cao.
+        GIúp cho các cột trong 1 hàng có chiều cao bằng nhau.
+    </p>
+    <div class="demo tall ai-stretch">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+    <h3><code>align-items: flex-start</code></h3>
+    <p class="note">
+        Đẩy tất cả các phần tử con lên cạnh phía trên đầu trục phụ của khung chứa
+    </p>
+    <div class="demo tall ai-flex-start">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+
+    <h3><code>align-items: flex-end</code></h3>
+    <p class="note">
+        Đẩy tất cả các phần tử con xuống cạnh phía dưới trục phụ của khung chứa
+    </p>
+    <div class="demo tall ai-flex-end">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+    <h3><code>align-items: flex-center</code></h3>
+    <p class="note">
+        Các mục được sắp xếp thẳng hàng ở vị trí trung tâm theo chiều dọc của thùng chứa
+    </p>
+    <div class="demo tall ai-center">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+    </div>
+</body>
+
+</html>
